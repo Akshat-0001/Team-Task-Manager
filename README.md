@@ -1,4 +1,4 @@
-# PulseBoard - Team Task Manager
+# Team Task Manager
 
 A task management web app built for teams. Manage projects, assign tasks, and track progress using a Kanban board.
 
