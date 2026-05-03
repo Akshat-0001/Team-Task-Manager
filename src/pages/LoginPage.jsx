@@ -58,18 +58,18 @@ export default function LoginPage() {
         transition={{ duration: 0.2 }}
         className="w-full lg:w-1/2 flex items-center justify-center p-8 relative z-10"
       >
-        <div className="w-full max-w-md">
+        <div className="w-full max-w-sm">
           {/* Logo */}
-          <div className="mb-8">
-            <h1 className="text-2xl font-bold text-gradient mb-2">Team Task Manager</h1>
-            <p className="text-white/40 text-sm">Sign in to continue to your workspace</p>
+          <div className="mb-6">
+            <h1 className="text-xl font-bold text-gradient mb-1">Team Task Manager</h1>
+            <p className="text-white/40 text-xs">Sign in to continue to your workspace</p>
           </div>
 
           {/* Form Card */}
-          <div className="glass-strong rounded-2xl p-8 border border-white/10">
-            <h2 className="text-xl font-bold text-white mb-6">Welcome back</h2>
+          <div className="glass-strong rounded-xl p-6 border border-white/10">
+            <h2 className="text-lg font-bold text-white mb-4">Welcome back</h2>
 
-            <form onSubmit={handleLogin} className="space-y-5">
+            <form onSubmit={handleLogin} className="space-y-4">
               {/* Email */}
               <div>
                 <label className="block text-xs font-medium text-slate-400 mb-2">Email</label>
@@ -87,7 +87,7 @@ export default function LoginPage() {
                     onBlur={() => setFocusedInput(null)}
                     placeholder="you@example.com"
                     required
-                    className="w-full bg-white/5 border border-white/10 focus:border-indigo-500/50 focus:bg-white/10 text-white placeholder:text-white/30 h-11 rounded-lg pl-10 pr-4 text-sm outline-none transition-all duration-300"
+                    className="w-full bg-white/5 border border-white/10 focus:border-indigo-500/50 focus:bg-white/10 text-white placeholder:text-white/30 h-10 rounded-lg pl-10 pr-4 text-sm outline-none transition-all duration-300"
                   />
                 </div>
               </div>
@@ -109,7 +109,7 @@ export default function LoginPage() {
                     onBlur={() => setFocusedInput(null)}
                     placeholder="Enter your password"
                     required
-                    className="w-full bg-white/5 border border-white/10 focus:border-indigo-500/50 focus:bg-white/10 text-white placeholder:text-white/30 h-11 rounded-lg pl-10 pr-12 text-sm outline-none transition-all duration-300"
+                    className="w-full bg-white/5 border border-white/10 focus:border-indigo-500/50 focus:bg-white/10 text-white placeholder:text-white/30 h-10 rounded-lg pl-10 pr-12 text-sm outline-none transition-all duration-300"
                   />
                   <button
                     type="button"
@@ -146,7 +146,7 @@ export default function LoginPage() {
                 whileTap={{ scale: 0.99 }}
                 type="submit"
                 disabled={loading}
-                className="w-full btn-primary h-11 text-sm font-semibold mt-6"
+                className="w-full btn-primary h-10 text-sm font-semibold mt-4"
               >
                 {loading ? (
                   <div className="flex items-center justify-center gap-2">
@@ -160,7 +160,7 @@ export default function LoginPage() {
             </form>
 
             {/* Divider */}
-            <div className="relative my-6">
+            <div className="relative my-4">
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full border-t border-white/10" />
               </div>
@@ -175,7 +175,7 @@ export default function LoginPage() {
               whileTap={{ scale: 0.99 }}
               onClick={handleGithubLogin}
               disabled={githubLoading}
-              className="w-full h-11 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white rounded-lg font-medium text-sm transition-all duration-300 flex items-center justify-center gap-2"
+              className="w-full h-10 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white rounded-lg font-medium text-sm transition-all duration-300 flex items-center justify-center gap-2"
             >
               {githubLoading ? (
                 <div className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
@@ -188,7 +188,7 @@ export default function LoginPage() {
             </motion.button>
 
             {/* Footer */}
-            <p className="text-center text-xs text-white/40 mt-6">
+            <p className="text-center text-xs text-white/40 mt-4">
               Don't have an account?{' '}
               <Link
                 to="/signup"
@@ -200,7 +200,7 @@ export default function LoginPage() {
           </div>
 
           {/* Back to home */}
-          <div className="mt-6">
+          <div className="mt-4">
             <Link
               to="/"
               className="text-xs text-white/30 hover:text-white/50 transition-colors inline-flex items-center gap-1"
